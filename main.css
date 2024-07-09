@@ -1,0 +1,66 @@
+:root {
+    --fundo-escuro: #1d1d1d;
+    --letra-clara: #ebebeb;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--fundo-escuro);
+    color: var(--letra-clara);
+}
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    margin: 0 auto;
+    width: 300px;
+    height: 150px;
+    
+    padding: 15px;       
+    border: solid 1px black;
+    border-radius: 5px;
+    
+    background: #121212;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.div-clicou ul {
+    display: none;
+}
+.div-clicado {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.7em;
+    color: #ffb100;
+}
+.div-clicado i::before {
+    content: "\2605";
+    /* content: "\2606"; */
+    font-style: normal;
+}
+.div-clicado i:nth-child(4n) {
+    margin-right: 7px;
+}
+.div-resultado {
+    font-size: 3.5em;
+}
+.div-resultado span {
+    font-size: medium;
+}
+.btn-tap {
+    width: 100%;
+    height: 30px;
+    background: #ffb100a6;
+    color: var(--letra-clara);
+    border-radius: 5px;        
+    border: none;
+}
